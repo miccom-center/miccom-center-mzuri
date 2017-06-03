@@ -1,0 +1,202 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ *
+ * Modified by Mzuri S Handlin
+ *
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+img {
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+p {
+	font-size:1.2em;
+	margin:0 0 20px 0;
+}
+
+.red-bold-text {
+	color: #f00;
+	font-weight:bold;
+}
+
+
+/* table */
+th, td {
+	padding: 5px;
+	font-size: 1.25em;
+}
+th {
+	text-align: center;
+	font-weight: bold;
+	width:20%;
+}
+.table-col-1 {
+	width:10%;
+}
+
+/* front page title */
+#site-header {
+	font-size:2.5em;
+	margin:75px 30px 50px 30px;
+	text-align:center;
+}
+
+header.carousel-control.left, .carousel-control.right {
+   filter:none !important;
+   opacity:0.35;
+}
+header.carousel img {
+	margin:0;
+	position:center;
+	height:300px;
+	width:auto;
+}
+.body-carousel.carousel-control.left, .body-carousel.carousel-control.right {
+   /* opacity:1; */
+   background-image:none !important;
+   filter:none !important;
+}
+.body-carousel img {
+	margin:0;
+	position:center;
+	height:300px;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+/*     header.carousel .carousel {
+        height: 70%;
+    } */
+}
+
+/* change body width */
+/* @media (min-width: 1000px) {
+    .container{
+        max-width: 800px;
+    }
+}
+ */
+
+ /*!
+ * for adding spacing between Bootstrap rows 
+ * (apply to the row div that needs a top margin)
+ */
+.top-buffer { margin-top:40px; }
+.top-buffer-md { margin-top:150px; }
+
+.bottom-buffer-md { margin-bottom:125px; }
+
+.bottom-buffer-sm { margin-bottom:25px; }
+
+/* Contact Us page styles */
+.address-large {
+	font-size: 1.25em;
+	margin-bottom: 75px;
+}
+
+.address-header {
+	margin: 40px 0px;
+}
+
+/* Footer shenanigans */
+.footer { 
+	background-color:#303238; 
+	min-height:300px; 
+	font-family: 'Open Sans', sans-serif; 
+	margin:50px 0 0 0 ;
+}
+
+.footer-blurb p { 
+	text-align:center; 
+	color:#FFF; 
+	padding:20px;
+	font-weight: 600;
+	margin:0;
+}
+
+.footer-blurb { 
+	min-height:80px; 
+	border-bottom: 1px solid #696969;
+	margin:0 0 20px 0;
+	padding:0;
+}
+
+.footer-logo {
+	margin:10px;
+}
+
+.footer-logo img {
+	vertical-align:bottom;
+}
+
+/* for logos (FIX TO INCLUDE FOOTER) */
+.logo {
+	margin: 10px 0;
+}
+
+/* main entry lists */
+.big-list li {
+	font-size: 1.2em;
+	margin:1em 0;
+}
+
+/* person with picture */
+.person-list-entry {
+	
+}
+.person-list-entry img{
+	height: auto;
+	width:100px;
+	float: left;
+	margin: 0 20px 0 15px;
+}
+
+/*  news post entries */
+.news-post img{
+	/* height: 100px; */
+	/* width:auto; */
+	max-height: 200px;
+	width:auto;
+	margin-bottom:0;
+}
+
+/* publication entries */
+.publication h3 {
+	margin-top:0;
+	font-size:1.65em;
+}
+.publication p {
+	margin-bottom: 0px;
+}
+.publication hr {
+	margin: 20px 0;
+}
+
