@@ -19,6 +19,7 @@ body {
 }
 
 img {
+	
 }
 
 .img-hover:hover {
@@ -91,10 +92,13 @@ header.carousel img {
     .img-portfolio {
         margin-bottom: 15px;
     }
+}
 
-/*     header.carousel .carousel {
-        height: 70%;
-    } */
+@media(max-width:450px) {
+    header.carousel img{
+        /* height: auto; */
+        height: 150px;
+    }
 }
 
 /* change body width */
