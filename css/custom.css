@@ -58,7 +58,7 @@ th {
 	text-align:center;
 }
 
-header.carousel-control.left, .carousel-control.right {
+header.carousel-control.left, header.carousel-control.right {
    filter:none !important;
    opacity:0.35;
 }
