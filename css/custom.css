@@ -1,4 +1,4 @@
-/*!
+/*
  * Start Bootstrap - Modern Business (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -6,6 +6,14 @@
  * Modified by Mzuri S Handlin
  *
  */
+
+/*Possible colors from coolors.co:  (need to get my shit in SASS)
+* green: #48A9A6
+* off-white: #E4DFDA
+* tan: #D4B483
+* red: #C1666B
+* blue: #445E93
+*/
 
 /* Global Styles */
 
@@ -36,6 +44,26 @@ p {
 	font-weight:bold;
 }
 
+a {
+	word-wrap: break-word;
+}
+
+
+/*Jumbotron header */
+.jumbotron {
+	background: #445E93;
+	color: white;
+	text-align: center;
+	margin-bottom:70px;
+	
+}
+.jumbotron p {
+	font-size: 20px;
+}
+.jumbotron h1 {
+	font-size:40px;
+}
+
 
 /* table */
 th, td {
@@ -54,7 +82,7 @@ th {
 /* front page title */
 #site-header {
 	font-size:2.5em;
-	margin:75px 30px 50px 30px;
+	margin:65px 30px 50px 30px;
 	text-align:center;
 }
 
@@ -77,7 +105,114 @@ header.carousel img {
 	margin:0;
 	position:center;
 	height:300px;
+	width:auto;
 }
+
+ /*!
+ * for adding spacing between Bootstrap rows 
+ * (apply to the row div that needs a top margin)
+ */
+.top-buffer { margin-top:40px; }
+.top-buffer-sm { margin-top:10px; }
+.top-buffer-md { margin-top:50px; }
+.top-buffer-lg { margin-top:150px; }
+.bottom-buffer-md { margin-bottom:125px; }
+.bottom-buffer-sm { margin-bottom:20px; }
+
+/* Contact Us page styles */
+.address-large {
+	font-size: 1.25em;
+	margin-bottom: 75px;
+}
+
+.address-header {
+	margin: 40px 0px;
+}
+
+/* Footer shenanigans */
+.footer { 
+	background-color:#303238; 
+	/* min-height:300px;  */
+	font-family: 'Open Sans', sans-serif; 
+	margin-top:40px;
+}
+
+.footer-blurb p { 
+	text-align:center; 
+	color:#FFF; 
+	font-weight: 600;
+	margin:40px;
+}
+
+.footer-logo img {
+	margin:30px 0;
+	max-height:50px;
+	width:auto;
+}
+
+.navbar-logo  {
+	width: 90px;
+	height:auto;
+}
+
+/* for logos (FIX TO INCLUDE FOOTER?) */
+.logo {
+	margin: 10px 0;
+}
+
+/* main entry lists */
+.big-list li {
+	font-size: 1.2em;
+	margin-bottom:10px;
+}
+
+/* profiles (picture of person pluse name and small description */
+.person-list-entry h3, .person-list-entry h4, .person-list-entry p{
+	margin: 0 20px 10px 0;
+}
+.person-list-entry img{
+	height: auto;
+	width:100px;
+	float: left;
+	margin: 0 20px 0 0;
+	clear:below;
+}
+
+/*  news post entries */
+.news-post img{
+	/* height: 100px; */
+	/* width:auto; */
+	max-height: 200px;
+	width:auto;
+	margin-bottom:0;
+}
+.news-post p {
+	margin:10px 0 0 0;
+}
+.news-post h3 {
+	margin-top: 0;
+}
+
+/* publication entries */
+.publication h3 {
+	margin-top:0;
+	font-size:1.6em;
+}
+.publication p {
+	/* font-size:1.15em; */
+	margin-bottom: 5px;
+}
+.abstract p {
+	margin-top:7px;
+	font-size:1em;
+}
+
+/* group of panels */
+.panel-group .panel {
+	/* height:250px; */
+	margin-bottom: 20px;
+}
+
 
 /* Responsive Styles */
 
@@ -101,6 +236,20 @@ header.carousel img {
     }
 }
 
+@media(min-width:767px) {
+    .person-list-entry img {
+        width:125px;
+		height:auto;
+    }
+}
+/* 
+@media(min-width:991px) {
+    .person-list-entry img {
+        width:150x;
+		height:auto;
+    }
+} */
+
 /* change body width */
 /* @media (min-width: 1000px) {
     .container{
@@ -108,99 +257,3 @@ header.carousel img {
     }
 }
  */
-
- /*!
- * for adding spacing between Bootstrap rows 
- * (apply to the row div that needs a top margin)
- */
-.top-buffer { margin-top:40px; }
-.top-buffer-md { margin-top:150px; }
-
-.bottom-buffer-md { margin-bottom:125px; }
-
-.bottom-buffer-sm { margin-bottom:25px; }
-
-/* Contact Us page styles */
-.address-large {
-	font-size: 1.25em;
-	margin-bottom: 75px;
-}
-
-.address-header {
-	margin: 40px 0px;
-}
-
-/* Footer shenanigans */
-.footer { 
-	background-color:#303238; 
-	min-height:300px; 
-	font-family: 'Open Sans', sans-serif; 
-	margin:50px 0 0 0 ;
-}
-
-.footer-blurb p { 
-	text-align:center; 
-	color:#FFF; 
-	padding:20px;
-	font-weight: 600;
-	margin:0;
-}
-
-.footer-blurb { 
-	min-height:80px; 
-	border-bottom: 1px solid #696969;
-	margin:0 0 20px 0;
-	padding:0;
-}
-
-.footer-logo {
-	margin:10px;
-}
-
-.footer-logo img {
-	vertical-align:bottom;
-}
-
-/* for logos (FIX TO INCLUDE FOOTER) */
-.logo {
-	margin: 10px 0;
-}
-
-/* main entry lists */
-.big-list li {
-	font-size: 1.2em;
-	margin:1em 0;
-}
-
-/* person with picture */
-.person-list-entry {
-	
-}
-.person-list-entry img{
-	height: auto;
-	width:100px;
-	float: left;
-	margin: 0 20px 0 15px;
-}
-
-/*  news post entries */
-.news-post img{
-	/* height: 100px; */
-	/* width:auto; */
-	max-height: 200px;
-	width:auto;
-	margin-bottom:0;
-}
-
-/* publication entries */
-.publication h3 {
-	margin-top:0;
-	font-size:1.65em;
-}
-.publication p {
-	margin-bottom: 0px;
-}
-.publication hr {
-	margin: 20px 0;
-}
-

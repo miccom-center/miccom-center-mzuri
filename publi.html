@@ -131,10 +131,21 @@
         <!-- End page heading -->
 		
         <!-- Publication -->
-        <div class="publication top-buffer"> 	
+        <div class="publication top-buffer-sm"> 	
             <h3>Performance and self-consistency of the generalized dielectric dependent hybrid functional</h3>
             <p>Nicholas P. Brawand, Marco Govoni, Márton Vörös, and Giulia Galli</p>
 			<p><a href="#" target="_blank"><em>J. Chem. Theory Comput.</em>, Accepted (2017)</a></p>
+			<button data-toggle="collapse" data-target="#publi-1" class="btn-abstract toggle-text">
+				<span>Show Abstract</span>
+				<span class="caret"></span>
+				<span class="hidden">Hide Abstract</span>
+				<span class="hidden dropup">
+					<span class="hidden caret"></span>
+				</span>
+			</button>
+			<div id="publi-1" class="collapse abstract">
+				<p>We analyze the performance of the recently proposed screened exchange constant functional (SX) (Phys. Rev. X <b>2016</b>, 10, 642) on the GW100 test set, and we discuss results obtained at different levels of self-consistency. The SX functional is a generalization of dielectric dependent hybrid functionals to finite systems, it is non-empirical and depends on the average screening of the exchange interaction. We compare results for ionization potentials obtained with SX to those of CCSD(T) calculations and experiments and we find excellent agreement, on par with recent state of the art methods based on many body perturbation theory. Applying SX perturbatively to correct PBE eigenvalues yields improved results in most cases, except for ionic molecules, for which wave function self-consistency is instead crucial. Calculations where wave functions and the screened exchange constant (&alpha;<sup>SX</sup>) are determined self-consistently, and those where &alpha;<sup>SX</sup> is fixed to the value determined within PBE, yield results of comparable accuracy. Perturbative G<sub>0</sub>W<sub>0</sub> corrections of eigenvalues obtained with self-consistent &alpha;<sup>SX</sup> are small on average, for all molecules in the GW100 test set.</p>
+			</div>
 			<hr> <!-- line break -->
         </div>
 
@@ -385,6 +396,7 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
   
   <!-- Bootstrap Core JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
