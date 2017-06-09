@@ -61,9 +61,12 @@ a {
 /*Jumbotron header */
 .jumbotron {
 	background: #445E93;
+	/* background: #585191; */
+	/* background: #7D6F86; */
+	/* color: #EEF4ED; */
 	color: white;
 	text-align: center;
-	margin-bottom:60px;
+	margin-bottom:55px;
 	
 }
 .jumbotron h1 {
