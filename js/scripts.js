@@ -16,7 +16,7 @@ $('.toggle-text').click(function() {
 
 
 /* Move carousel caption -- FIX: flickers on page load. Move where script loads? (bad practice?)*/
-/* $(function () {
+ $(function () {
     $('.carousel').carousel();
     var caption = $('div.item:nth-child(1) .carousel-caption');
     $('.new-caption-area').html(caption.html());
@@ -27,7 +27,7 @@ $('.toggle-text').click(function() {
         $('.new-caption-area').html(caption.html());
         caption.css('display', 'none');
     });
-});  */
+});  
 
 /* Activate the Carousel */
 $('.carousel').carousel({

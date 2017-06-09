@@ -30,7 +30,7 @@ body {
 }
 
 img {
-	
+	margin-bottom:25px;
 }
 
 .img-hover:hover {
@@ -52,6 +52,7 @@ a {
 	word-wrap: break-word;
 }
 
+
 /* navbar */
 .navbar {
 	/* background-color:#303238;	 */
@@ -62,7 +63,7 @@ a {
 	background: #445E93;
 	color: white;
 	text-align: center;
-	margin-bottom:70px;
+	margin-bottom:60px;
 	
 }
 .jumbotron h1 {
@@ -114,7 +115,7 @@ th {
 	color: #333;
 	text-shadow:none;
 	width:100%;
-	/* text-align:left; */
+	text-align:center; 
 } 
 .carousel-caption h3 {
 	margin:10px 0;
@@ -123,20 +124,27 @@ th {
 .carousel-caption p {
 	margin: -5px 0 10px 0;
 	font-size: 1rem;
+	text-align:center;
 }
-.carousel-inner {
-	/* margin-bottom:50px; */
+.new-caption-area {
+	height:80px;
 }
 .new-caption-area h3{
 	margin:5px 0;
 	font-size:1.25 em;
+	text-align:center;
+}
+.new-caption-area p{
+	text-align:center;
+}
+.carousel-control {
+	/* color:red; */
 }
 
 
 
 
-
-.carousel-controls {
+/* .carousel-controls {
    	position: relative;
    	bottom: 0;
    	left: 0;
@@ -214,7 +222,7 @@ th {
   	height: 10px;
   	margin: 0;
   	background-color: #000000;
-}
+} */
 
 
 
@@ -261,7 +269,8 @@ th {
 
 .footer-logo img {
 	margin:30px 0;
-	max-height:50px;
+	max-height:40px;
+	max-width:100%;
 	width:auto;
 }
 
@@ -286,8 +295,8 @@ th {
 	margin: 0 20px 10px 0;
 }
 .person-list-entry img{
-	height: auto;
-	width:100px;
+	height: 100px;
+	width:auto;
 	float: left;
 	margin: 0 20px 0 0;
 	clear:below;
@@ -317,15 +326,26 @@ th {
 	/* font-size:1.15em; */
 	margin-bottom: 5px;
 }
+/* FIX: why is the whole width of the column clickable?*/
+/* FIX: margin-bottom nonzero only on small devices */
+.publication img {
+	max-height: 150px;
+	width:auto;
+	margin-bottom:0;	
+}
 .abstract p {
 	margin-top:7px;
 	font-size:1em;
 }
 
 /* group of panels */
-.panel-group .panel {
-	/* height:250px; */
-	margin-bottom: 20px;
+.panel {
+	margin-top:20px;
+	margin-bottom:30px;
+}
+/* BAD HACKY SOLUTION, NEED TO MAKE ALL PANELS IN GROUP HAVE SAME HEIGHT automtically */
+.index-panel {
+	height:195px;
 }
 
 
@@ -353,17 +373,10 @@ th {
 
 @media(min-width:767px) {
     .person-list-entry img {
-        width:125px;
-		height:auto;
+        width:auto;
+		height:125px;
     }
 }
-/* 
-@media(min-width:991px) {
-    .person-list-entry img {
-        width:150x;
-		height:auto;
-    }
-} */
 
 /* change body width */
 /* @media (min-width: 1000px) {
