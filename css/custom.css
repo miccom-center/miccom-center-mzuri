@@ -17,7 +17,7 @@
 
 /* Global Styles */
 html {
-	font-size:16px; 
+	font-size:18px; 
 }
 
 html,
@@ -52,10 +52,24 @@ a {
 	word-wrap: break-word;
 }
 
+li {
+	font-size:1rem;
+	margin-bottom:20px;
+}
+
+li p {
+	margin-top:10px;
+	font-size:0.95rem;
+}
+
 
 /* navbar */
 .navbar {
 	/* background-color:#303238;	 */
+}
+.navbar li {
+	font-size:1rem;
+	margin-bottom:0;
 }
 
 /*Jumbotron header */
@@ -118,27 +132,18 @@ th {
 	color: #333;
 	text-shadow:none;
 	width:100%;
-	text-align:center; 
 } 
-.carousel-caption h3 {
-	margin:10px 0;
-	font-size: 1.5em;
-}
-.carousel-caption p {
-	margin: -5px 0 10px 0;
-	font-size: 1rem;
-	text-align:center;
-}
 .new-caption-area {
 	height:80px;
 }
 .new-caption-area h3{
-	margin:5px 0;
-	font-size:1.25 em;
+	margin:10px 0 3px 0;
+	font-size:1.2rem;
 	text-align:center;
 }
 .new-caption-area p{
 	text-align:center;
+	font-size:0.9rem;
 }
 .carousel-control {
 	/* color:red; */
@@ -277,23 +282,13 @@ th {
 	width:auto;
 }
 
-.navbar-logo  {
-	width: 90px;
-	height:auto;
-}
-
 /* for logos (FIX TO INCLUDE FOOTER?) */
 .logo {
 	margin: 10px 0;
 }
 
-/* main entry lists */
-.big-list li {
-	font-size: 1.2em;
-	margin-bottom:10px;
-}
-
-/* profiles (picture of person pluse name and small description */
+/* profiles 
+(picture of person pluse name and small description */
 .person-list-entry h3, .person-list-entry h4, .person-list-entry p{
 	margin: 0 20px 10px 0;
 }
@@ -304,6 +299,12 @@ th {
 	margin: 0 20px 0 0;
 	clear:below;
 }
+@media(min-width:767px) {
+    .person-list-entry img {
+        width:auto;
+		height:125px;
+    }
+}
 
 /*  news post entries */
 .news-post img{
@@ -311,13 +312,22 @@ th {
 	/* width:auto; */
 	max-height: 200px;
 	width:auto;
-	margin-bottom:0;
 }
 .news-post p {
 	margin:10px 0 0 0;
 }
 .news-post h3 {
 	margin-top: 0;
+}
+@media(max-width:767px) {
+    .news-post img {
+        margin-bottom: 15px;
+    }
+}
+@media(min-width:768px) {
+    .news-post img {
+        margin-bottom: 0;
+    }
 }
 
 /* publication entries */
@@ -346,38 +356,40 @@ th {
 	margin-top:20px;
 	margin-bottom:30px;
 }
+
+.panel p {
+	margin-bottom:0;
+}
+.panel-footer {
+	padding-top: 0;
+	border-top:0;
+	background-color:white;
+}
+
 /* BAD HACKY SOLUTION, NEED TO MAKE ALL PANELS IN GROUP HAVE SAME HEIGHT automtically */
-.index-panel {
-	height:195px;
+@media(min-width:992px) {
+	.research_overview-panels .panel-body{
+		height:225px;
+	}
+}
+@media(min-width:1200px) {
+	.research_overview-panels .panel-body{
+		height:170px;
+	}
+}
+@media(min-width:992px) {
+	.index-panel .panel-body{
+		height:80px;
+	}
 }
 
 
 /* Responsive Styles */
 
-@media(max-width:991px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-}
-
 @media(max-width:450px) {
     header.carousel img{
         /* height: auto; */
         height: 150px;
-    }
-}
-
-@media(min-width:767px) {
-    .person-list-entry img {
-        width:auto;
-		height:125px;
     }
 }
 
