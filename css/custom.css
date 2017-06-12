@@ -65,12 +65,6 @@ li p {
 
 /* navbar */
 
-
-* {
-	/* border:1px red solid; */
-}
-
-
 .navbar li {
 	font-size:1rem;
 	margin-bottom:0;
@@ -126,6 +120,11 @@ li p {
 }
 
 
+
+
+
+
+
 /*Jumbotron header */
 .jumbotron {
 	background: #445E93;
@@ -162,6 +161,8 @@ th {
 }
 
 
+/* Carousel */
+
 .carousel-control.left, .carousel-control.right {
    background-image:none !important;
 }
@@ -175,20 +176,19 @@ th {
 } */
 .carousel img {
 	margin:0;
-	/* position:center; */
-	height:300px;
-	width:auto;
 }
+
 .carousel-caption {
 	position:relative;
 	left:auto;
 	right:auto;
 	color: #333;
 	text-shadow:none;
-	width:100%;
 } 
+
+/* TODO: make height of the caption equal to max of possible options automatically (and responsively */
 .new-caption-area {
-	height:80px;
+	height:85px;
 }
 .new-caption-area h3{
 	margin:10px 0 3px 0;
@@ -199,12 +199,6 @@ th {
 	text-align:center;
 	font-size:0.9rem;
 }
-.carousel-control {
-	/* color:red; */
-}
-
-
-
 
 /* .carousel-controls {
    	position: relative;
@@ -286,6 +280,54 @@ th {
   	background-color: #000000;
 } */
 
+/* HOLY WOW OH MY GOD THIS IS A TERRIBLE WAY OF DOING THIS */
+/* currently, we are setting the image sizes manually for all kinds of device sizes to avoid skewing the aspect ratio or having the rest of the page move in response */
+/* TODO: make this responsive. ie, automatically resize images to be max size without overflowing or changing aspect ratio, but keep the total height of the carousel at any one device size equal to the height of the maximum option */
+@media (max-width: 390px) {
+	.carousel img {
+		height:150px;
+		width:auto;
+	}
+	.new-caption-area {
+		height:130px;
+	}
+}
+@media (min-width: 391px) {
+	.carousel img {
+		height:200px;
+		width:auto;
+	}
+	.new-caption-area {
+		height:110px;
+	}
+}
+@media (min-width: 481px) {
+	.carousel img {
+		height:250px;
+		width:auto;
+	}
+	.new-caption-area {
+		height:80px;
+	}	
+}
+@media (min-width: 768px) {
+	.carousel img {
+		height:300px;
+		width:auto;
+	}
+}
+@media (min-width: 992px) {
+	.carousel img {
+		height:250px;
+		width:auto;
+	}
+}
+@media (min-width: 1200px) {
+	.carousel img {
+		height:300px;
+		width:auto;
+	}
+}
 
 
 
