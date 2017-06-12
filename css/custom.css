@@ -64,13 +64,67 @@ li p {
 
 
 /* navbar */
-.navbar {
-	/* background-color:#303238;	 */
+
+
+* {
+	/* border:1px red solid; */
 }
+
+
 .navbar li {
 	font-size:1rem;
 	margin-bottom:0;
 }
+
+.navbar {
+    /* background-color: #303238; */
+    background-color: #404040;
+    border-bottom:1px #303238;
+    border-top:1px #303238;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    /* color: #FFF; */
+    color: #FFF;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar .navbar-nav > li > a:hover 
+/* .navbar .navbar-nav > li > a:focus */
+{
+    background-color: black;  
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: black;
+}
+
+.navbar .navbar-text {
+    color: #FFF;
+}
+
+.navbar .navbar-toggle {
+	background-color:black;
+    border-color: black; 
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+    background-color: black;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
 
 /*Jumbotron header */
 .jumbotron {
@@ -274,12 +328,25 @@ th {
 	font-weight: 600;
 	margin:40px;
 }
-
 .footer-logo img {
 	margin:30px 0;
-	max-height:40px;
+	max-height:60px;
 	max-width:100%;
 	width:auto;
+}
+.col-lg-1half{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 1200px) {
+    .col-lg-1half {
+        float: left;
+    }
+    .col-lg-1half {
+        width: 12.5%;
+    }
 }
 
 /* for logos (FIX TO INCLUDE FOOTER?) */
@@ -351,6 +418,16 @@ th {
 	font-size:1em;
 }
 
+/* denser lists */
+.dense-list p {
+	margin-bottom:5px;
+	font-weight:500;
+}
+.dense-list li {
+	font-size:0.95rem;
+	margin-bottom: 5px;
+}
+
 /* group of panels */
 .panel {
 	margin-top:20px;
@@ -365,7 +442,6 @@ th {
 	border-top:0;
 	background-color:white;
 }
-
 /* BAD HACKY SOLUTION, NEED TO MAKE ALL PANELS IN GROUP HAVE SAME HEIGHT automtically */
 @media(min-width:992px) {
 	.research_overview-panels .panel-body{
