@@ -73,15 +73,8 @@ li p {
 .navbar {
     /* background-color: #303238; */
     background-color: #404040;
-    border-bottom:1px #303238;
-    border-top:1px #303238;
-}
-
-.navbar .navbar-brand,
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus {
-    /* color: #FFF; */
-    color: #FFF;
+    border-bottom:1px #404040;
+    border-top:1px #404040;
 }
 
 .navbar .navbar-nav > li > a {
@@ -119,8 +112,28 @@ li p {
     background-color: #FFF;
 }
 
-
-
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #FFF;
+	padding:0 0 0 15px; 
+	/* padding:0; */
+	/* border-top:1px #303238 solid; */
+	/* border-bottom:1px #303238 solid; */
+	background-color:#404040
+}
+.navbar-logo  {
+	/* height:2.778rem; */
+	/* width:auto;	 */
+	/* width:5.5909rem; */
+	width:5.556rem; 
+	/* width:4.757rem; */
+	/* width:100px; */
+	height:auto;
+	margin:0;
+}
+@media(max-width:991px) {
+}
 
 
 
@@ -133,15 +146,12 @@ li p {
 	/* color: #EEF4ED; */
 	color: white;
 	text-align: center;
-	margin-bottom:55px;
-	
+	margin-bottom:40px;
+	padding:37px 0;
 }
 .jumbotron h1 {
-	font-size:45px;
+	font-size:2.2rem;
 	margin:0;
-}
-.jumbotron p {
-	font-size: 20px;
 }
 
 
@@ -152,14 +162,17 @@ th, td {
 	font-size: 1.25em;
 }
 th {
-	text-align: center;
-	font-weight: bold;
 	width:20%;
+	font-weight:normal; 
 }
-.table-col-1 {
-	width:10%;
+td {
+	vertical-align:text-top;
 }
-
+tr > th:first-of-type,
+tr> td:first-of-type {
+	font-weight:bold; 
+	vertical-align:middle;
+}
 
 /* Carousel */
 
@@ -289,7 +302,7 @@ th {
 		width:auto;
 	}
 	.new-caption-area {
-		height:130px;
+		height:150px;
 	}
 }
 @media (min-width: 391px) {
@@ -298,7 +311,7 @@ th {
 		width:auto;
 	}
 	.new-caption-area {
-		height:110px;
+		height:120px;
 	}
 }
 @media (min-width: 481px) {
@@ -307,7 +320,7 @@ th {
 		width:auto;
 	}
 	.new-caption-area {
-		height:80px;
+		height:90px;
 	}	
 }
 @media (min-width: 768px) {
@@ -476,6 +489,17 @@ th {
 	margin-bottom:30px;
 }
 
+.index-panel {
+	border-top:none;
+}
+.index-panel .panel-heading{
+	background-color:#d8d8d8; 
+}
+
+.index-panel .panel-heading h4{
+	font-weight:bold;
+}
+
 .panel p {
 	margin-bottom:0;
 }
@@ -503,13 +527,6 @@ th {
 
 
 /* Responsive Styles */
-
-@media(max-width:450px) {
-    header.carousel img{
-        /* height: auto; */
-        height: 150px;
-    }
-}
 
 /* change body width */
 /* @media (min-width: 1000px) {

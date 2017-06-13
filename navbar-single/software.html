@@ -51,7 +51,7 @@
 			</div>
 			
 			<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav">
 			
 				<li><a href="index.html">Home</a></li>
 				
@@ -73,13 +73,13 @@
 				<span class="caret"></span></a>
 					<ul class="dropdown-menu">							
 					<li><a href="research_overview.html">Research Overview</a></li>
-					<li><a href="software.html">Software</a></li>   
+					<li class="active"><a href="software.html">Software</a></li>   
 					<li><a href="validation.html">Validation</a></li>
 					<li><a href="data.html">Data</a></li>
 					<li><a href="SNP.html">Semiconducting Nanoparticles</a></li>
 					<li><a href="THM.html">Thermoelectric Materials</a></li>
 					<li><a href="NEM.html">Liquid Crystals</a></li>
-					<li class="active"><a href="SH2O.html">Solid/Water Interfaces</a></li>
+					<li><a href="SH2O.html">Solid/Water Interfaces</a></li>
 					</ul>
 				</li>
 				
@@ -109,50 +109,117 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Page Heading-->
+        <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Solid/Water Interfaces (SH2O)</h1>
+                <h1 class="page-header">Software</h1>
             </div>
         </div>
-        <!-- End Page heading -->
+        <!-- /.row -->
 
+        <!-- Page Content -->
         <div class="row">
-			<div class="col-lg-12">
-				<p>Principal Investigators: <a href="http://www.anl.gov/cnm/person/maria-k-y-chan" target="_blank">Maria Chan</a>, <a href="http://ime.uchicago.edu/giulia_galli/">Giulia Galli</a>, <a href="http://faculty.engineering.ucdavis.edu/gygi/" target="_blank">Francois Gygi</a>, <a href="http://aztec.tech.northwestern.edu/modlc.html">Monica Olvera de la Cruz</a>, <a href="http://www.anl.gov/cees/about-cees" target="_blank">Paul Fenter</a> (experimentalist) and <a href="https://www.anl.gov/person/john-mitchell" target="_blank">John Mitchell</a> (experimentalist)</p>
-			</div>
+		
+			<!-- Description column -->
+            <div class="col-md-6">
+				<p>The main software development efforts supported by MICCoM are:</p>
+                <ul>
+					<li><a href="http://qboxcode.org/" target="_blank"><strong>Qbox</strong></a><br>
+					First-principles MD
+					</li>
+					
+					<li><b><a href="http://www.west-code.org/" target="_blank">WEST</a></b><br>
+					GW, BSE
+					</li>
+					
+					<li><b><a href="http://ime-code.uchicago.edu/" target="_blank">SSAGES/COPSS</a></b><br>
+					Advanced sampling and particle-continuum codes
+					</li>
+					
+					<li><b><a href="http://ime-code.uchicago.edu/" target="_blank">SSAGES/COPSS</a></b><br>
+					Advanced sampling and particle-continuum codes
+					</li>					
+                </ul>
 			
-            <div class="col-sm-6 dense-list">
-				<p>Atomistic Structure</p>
-				<ul>
-				    <li>Liquid water and salt solutions</li>
-					<li>Bulk solids</li>
-					<li>Liquid-solid interfaces</li>
-				</ul>
-				
-				<p>Target properties</p>
-				<ul>
-				    <li>Interfacial XRD structure factor</li>
-					<li>Diffusive ion distribution at interfaces</li>
-				</ul>
+				<p>WEST performs large-scale many-body perturbation theory calculations providing electronic and optical spectroscopic characterization of complex materials. Qbox is a first principles molecular dynamics (MD) code using Density Functional Theory (DFT) and hybrid-DFT. In addition to the simulation of thermodynamic and structural properties of materials, Qbox allows for the calculations of vibrational spectra, ionic conductivity and heat transport coefficients.</p>
+				<p>While public versions of Qbox and WEST existed before the center was established, SSAGES and COPSS were born with MICCoM. SSAGES provides a comprehensive suite of advanced methods for phase space sampling organized into a unified framework that can be used as a wrapper for quantum and classical MD and Monte Carlo (MC) engines. COPSS provides a suite of sophisticated techniques to couple continuum and particle-based simulations for neutral, charged, and polarizable particles interacting in a dielectric and hydrodynamic continuum.</p>
 
-				<p>Approximations and models to be validated</p>
-				<ul>
-					<li>Interatomic interactions (including type of DFT and interatomic potentials)</li>
-					<li>Structure factor model</li>
-					<li>Electrostatic model</li>
-					<li>Numerical approximations</li>
-				</ul>
 				
             </div>
-            <div class="col-sm-6">
-				<img class="img-responsive" src="images/salt-simulation.jpeg">
-				<!-- "Photoelectron Spectra of Aqueous Solutions from First Principles" -->
-            </div>			
-        </div>	
+			<!-- End Description Column -->
+			
+			<!-- People column -->
+            <div class="col-md-6">
+				<!-- Person -->
+				<div class="row person-list-entry">
+					<div class="col-lg-12">
+						<a href="http://faculty.engineering.ucdavis.edu/gygi/" target="_blank"><img class="img-responsive img-hover" src="images/gygi180.png" alt=""/></a>
+						<h4>Qbox</h4>
+						<h3><a href="http://faculty.engineering.ucdavis.edu/gygi/" target="_blank">Fran&ccedilois Gygi</a></h3>
+						<p>University of California Davis</p>
+					</div>
+				</div>
+				<hr>
+				<!-- End Person -->
+				
+				<!-- Person -->
+				<div class="row person-list-entry">
+					<div class="col-lg-12">
+						<a href="http://galligroup.uchicago.edu/People/mgovoni.php" target="_blank"><img class="img-responsive img-hover" src="images/marco_govoni.jpg" alt=""/></a>
+						<h4>WEST</h4>
+						<h3><a href="http://galligroup.uchicago.edu/People/mgovoni.php">Marco Govoni</a></h3>
+						<p>University of Chicago &amp; Argonne National Laboratory</p>					
+					</div>
+				</div>
+				<hr>
+				<!-- End Person -->
+				
+				<!-- Person -->
+				<div class="row person-list-entry bottom-buffer-sm">
+					<div class="col-lg-12">
+						<a href="https://engineering.nd.edu/profiles/jwhitmer" target="_blank"><img class="img-responsive img-hover" src="images/whitmer.png" alt=""/></a>
+						<h4>SSAGES & COPSS</h4>
+						<h3><a href="https://engineering.nd.edu/profiles/jwhitmer" target="_blank">Jonathan Whitmer</a></h3>
+						<p>University of Notre Dame</p>					
+					</div>
+				</div>
+				<!-- End Person -->
+				
+				<!-- Person -->
+				<div class="row person-list-entry">
+					<div class="col-lg-12">
+						<a href="http://ime.uchicago.edu/de_pablo_lab/people/juan_de_pablo/" target="_blank"><img class="img-responsive img-hover" src="images/de_pablo.jpg" alt=""/></a>
+						<h4>SSAGES & COPSS</h4>
+						<h3><a href="http://ime.uchicago.edu/de_pablo_lab/people/juan_de_pablo/" target="_blank">Juan de Pablo</a></h3>
+						<p>University of Chicago &amp; Argonne National Laboratory</p>					
+					</div>
+				</div>
+				<!-- End Person -->				
+					
+            </div>	
+			<!-- End People Column -->
+			
+        </div>
+        <!-- /.row -->		
 		
+		<div class="row">
+            <!-- <div class="col-md-6"> -->
+            <div class="col-md-12">
+                <center><img class="img-responsive" src="images/code_interoperability.png"></center>
+            </div>		
+<!-- 		    <div class="col-md-6">
+				<br>
+				<br>
+				<br>
+				<br>
+                <p>Illustration of interoperability of the codes developed by MICCoM (Qbox, WEST, SSAGES and COPSS), and of classical MD and MC engines used within the center. Arrows indicate data shared between the codes. </p>
+            </div> -->
+			
+	
+		</div>
+	
     </div>
-    <!-- end page content -->
+    <!-- /.container -->
 
     <footer class="footer">
 		<div class="container">

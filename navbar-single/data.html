@@ -44,8 +44,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span> 
 				</button>
-
-				<a class="navbar-brand" href="index.html">MICCoM</a>
+				
+				<!-- <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="images/miccom-logo-backgroung_2.png"></a> -->
+				<a class="navbar-brand" href="index.html"><img class="navbar-logo" src="images/MICCoM_logo_tall.png"></a>
+				<!-- <a class="navbar-brand" href="index.html">MICCoM</a> -->
 			</div>
 			
 			<div class="collapse navbar-collapse" id="myNavbar">
@@ -73,12 +75,11 @@
 					<li><a href="research_overview.html">Research Overview</a></li>
 					<li><a href="software.html">Software</a></li>   
 					<li><a href="validation.html">Validation</a></li>
-					<li><a href="data.html">Data</a></li>
+					<li class="active"><a href="data.html">Data</a></li>
 					<li><a href="SNP.html">Semiconducting Nanoparticles</a></li>
 					<li><a href="THM.html">Thermoelectric Materials</a></li>
 					<li><a href="NEM.html">Liquid Crystals</a></li>
 					<li><a href="SH2O.html">Solid/Water Interfaces</a></li>
-					<li class="active"><a href="interoperability.html">Codes Interoperability</a></li>
 					</ul>
 				</li>
 				
@@ -92,9 +93,7 @@
 				</li>	
 				
 				<li><a href="publi.html">Publications</a></li>
-			</ul>
-			
-			<ul class="nav navbar-nav navbar-right">
+				
 				<li>
 					<a href="https://wiki.uchicago.edu/display/miccom/Welcome" target="_blank"><span class="fa fa-wikipedia-w"></span></a>
 				</li>		
@@ -110,41 +109,25 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Page Heading-->
+        <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Interoperability</h1>
+                <h1 class="page-header">Data
+                </h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Row -->
-        <div class="row">
-            <div class="col-md-5">
-                <ul >
-					<li><a href="http://qboxcode.org/"><strong>Qbox</strong></a></br>
-						- First-principles MD (F. Gygi)
-					</li>
-					<li><b><a href="http://www.west-code.org/">WEST</a></b></br>
-						- GW, BSE (M. Govoni, G. Galli)
-					</li>
-					<li><b><a href="http://ime-code.uchicago.edu/">SSAGES/COPSS</a></b></br>
-						- Advanced sampling and particle-continuum codes (J. de Pablo, J. Whitmer)
-					</li>
-					<li><b><a href="http://glotzerlab.engin.umich.edu/hoomd-blue/">HOOMD-blue</a></b></br>
-						- Classical MD (S. Glotzer, J. Anderson)
-					</li>
-					<li><b><a href="http://lammps.sandia.gov/">LAMMPS</a></b></br>
-						- Classical MD (S. Plimpton)
-					</li>
-                </ul>
-				<p><b>All codes open-source</b> (GPL or modified BSD licenses)</p>
-            </div>
-            <div class="col-md-7">
-                <img class="img-responsive" src="images/Interoperable.png">
-            </div>			
-        </div>
-        <!-- /.row -->	
+        <!-- Content -->
+        <p>MICCoM focuses its data activity on <a href ="validation.html">validation</a>, data production and collection, using public databases, and data analysis tools (scripts and codes to analyze data will be provided online).</p>
+	
+		<p>At present the Center focuses on:</p>
+
+		<ul>
+			<li>MD trajectories (see, e.g. <a href="http://www.quantum-simulation.org/reference/index.htm" target="_blank">http://www.quantum-simulation.org/reference/index.htm</a> for trajectories obtained from ab initio simulations; and <a target="_blank" href="https://glotzerlab.engin.umich.edu/signac/">https://glotzerlab.engin.umich.edu/signac/</a> for classical MD trajectories).</li>
+			<li>Spectroscopic data (GW100 and GW-SOC81) at <a href="http://www.west-code.org/database/index.php ">http://www.west-code.org/database/index.php</a>. See also hybrid functionals benchmark at <a target="_blank" href="http://galligroup.uchicago.edu/Research/hybrid_functionals.php#tables">http://galligroup.uchicago.edu/Research/hybrid_functionals.php</a>.</li>
+			<li>Scattering data (in preparation).</li>
+		</ul>	
 		
     </div>
     <!-- /.container -->
