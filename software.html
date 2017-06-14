@@ -45,13 +45,11 @@
 					<span class="icon-bar"></span> 
 				</button>
 				
-				<!-- <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="images/miccom-logo-backgroung_2.png"></a> -->
-				<a class="navbar-brand" href="index.html"><img class="navbar-logo" src="images/MICCoM_logo_tall.png"></a>
-				<!-- <a class="navbar-brand" href="index.html">MICCoM</a> -->
+				<a class="navbar-brand" href="index.html"><img class="navbar-logo" src="images/MICCoM_logo_white_transparent.png"></a>
 			</div>
 			
 			<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav">
 			
 				<li><a href="index.html">Home</a></li>
 				
@@ -122,34 +120,64 @@
 		
 			<!-- Description column -->
             <div class="col-md-6">
-				<p>The main software development efforts supported by MICCoM are:</p>
-                <ul>
-					<li><a href="http://qboxcode.org/" target="_blank"><strong>Qbox</strong></a><br>
-					First-principles MD
-					</li>
-					
-					<li><b><a href="http://www.west-code.org/" target="_blank">WEST</a></b><br>
-					GW, BSE
-					</li>
-					
-					<li><b><a href="http://ime-code.uchicago.edu/" target="_blank">SSAGES/COPSS</a></b><br>
-					Advanced sampling and particle-continuum codes
-					</li>
-					
-					<li><b><a href="http://ime-code.uchicago.edu/" target="_blank">SSAGES/COPSS</a></b><br>
-					Advanced sampling and particle-continuum codes
-					</li>					
-                </ul>
-			
-				<p>WEST performs large-scale many-body perturbation theory calculations providing electronic and optical spectroscopic characterization of complex materials. Qbox is a first principles molecular dynamics (MD) code using Density Functional Theory (DFT) and hybrid-DFT. In addition to the simulation of thermodynamic and structural properties of materials, Qbox allows for the calculations of vibrational spectra, ionic conductivity and heat transport coefficients.</p>
-				<p>While public versions of Qbox and WEST existed before the center was established, SSAGES and COPSS were born with MICCoM. SSAGES provides a comprehensive suite of advanced methods for phase space sampling organized into a unified framework that can be used as a wrapper for quantum and classical MD and Monte Carlo (MC) engines. COPSS provides a suite of sophisticated techniques to couple continuum and particle-based simulations for neutral, charged, and polarizable particles interacting in a dielectric and hydrodynamic continuum.</p>
-
+				<div class="row bottom-buffer-sm">
+					<div class="col-lg-12">
+						<p>The main software development efforts supported by MICCoM are:</p>
+					</div>
+				</div>
 				
+				<div class="row bottom-buffer-sm">
+					<div class="col-md-4">
+						<div class="img-wrapper software">
+							<a href="http://qboxcode.org/" target="_blank"><img class="img-responsive img-hover" src="images/qbox_logo.png"></a>
+						</div>
+					</div>
+					<div class="col-md-8">
+							<p><a href="http://qboxcode.org/" target="_blank"><strong>Qbox</strong></a>: <br>
+							First-principles molecular dynamics</p>
+					</div>
+				</div>
+					
+				<div class="row bottom-buffer-sm">
+					<div class="col-md-4">
+						<div class="img-wrapper software">
+							<a href="http://www.west-code.org/" target="_blank"><img class="img-responsive img-hover" src="images/WEST-logo.png"></a>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<p><a href="http://www.west-code.org/" target="_blank"><strong>WEST</strong></a>: <br>
+						Many-body perturbation theory</p>
+					</div>
+				</div>
+
+				<div class="row bottom-buffer-sm">
+					<div class="col-md-4">
+						<div class="img-wrapper software">
+							<a href="http://miccomcodes.org/" target="_blank"><img class="img-responsive img-hover" src="images/ssageslogo.jpg"></a>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<p><a href="http://miccomcodes.org/" target="_blank"><strong>SSAGES</strong></a>: <br>
+						Reactive pathway identification and free energy calculation</p>
+					</div>
+				</div>
+
+				<div class="row bottom-buffer-sm">
+					<div class="col-md-4">
+						<div class="img-wrapper software">
+							<a href="http://miccomcodes.org/" target="_blank"><img class="img-responsive img-hover" src="images/coppslogo-bordered.png"></a>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<p><a href="http://miccomcodes.org/" target="_blank"><strong>COPSS</strong></a>: <br>
+						Molecular dynamics spanning multiple timescales</p>
+					</div>
+				</div>				
             </div>
 			<!-- End Description Column -->
 			
 			<!-- People column -->
-            <div class="col-md-6">
+            <div class="col-md-6 bottom-buffer-md">
 				<!-- Person -->
 				<div class="row person-list-entry">
 					<div class="col-lg-12">
@@ -202,6 +230,12 @@
         </div>
         <!-- /.row -->		
 		
+				<div class="row">
+					<div class="col-lg-12 bottom-buffer-sm">
+						<p>WEST performs large-scale many-body perturbation theory calculations providing electronic and optical spectroscopic characterization of complex materials. Qbox is a first principles molecular dynamics (MD) code using Density Functional Theory (DFT) and hybrid-DFT. In addition to the simulation of thermodynamic and structural properties of materials, Qbox allows for the calculations of vibrational spectra, ionic conductivity and heat transport coefficients.</p>
+						<p>While public versions of Qbox and WEST existed before the center was established, SSAGES and COPSS were born with MICCoM. SSAGES provides a comprehensive suite of advanced methods for phase space sampling organized into a unified framework that can be used as a wrapper for quantum and classical MD and Monte Carlo (MC) engines. COPSS provides a suite of sophisticated techniques to couple continuum and particle-based simulations for neutral, charged, and polarizable particles interacting in a dielectric and hydrodynamic continuum.</p>
+					</div>
+				</div>		
 		<div class="row">
             <!-- <div class="col-md-6"> -->
             <div class="col-md-12">
@@ -227,33 +261,29 @@
 				<div class="col-lg-12">
 					<p>MICCoM is supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences</p>
 				<hr>
-				</div>
-
-				<div class="col-sm-3 col-lg-2 footer-logo">
-					<a href="index.html"><img class="image-responsive" src="images/miccom-logo-backgroung_2.png"></a>				
-				</div>				
+				</div>			
 				
-				<div class="col-sm-3 col-lg-2 footer-logo">
+				<div class="col-sm-4 col-lg-2 footer-logo logo-lg">
 					<a href="http://www.uchicago.edu"><img src="images/logo.rgb.reversed-2.png" class="img-responsive"/> </a>
 				</div>		
 				
-				<div class="col-sm-3 col-lg-1half footer-logo">
-					<a href="http://www.anl.gov"><img src="images/Argonne_smaller_logo_300x300.png" class="img-responsive"/> </a>				
+				<div class="col-sm-4 col-lg-2 footer-logo logo-sm">
+					<a href="http://www.anl.gov"><img src="images/Argonne_smaller_logo_300x300.png" class="img-responsive"/> </a>
 				</div>
 	
-				<div class="col-sm-3 col-lg-2 footer-logo">
+				<div class="col-sm-4 col-lg-2 footer-logo logo-lg">
 					<a href="http://www.ucdavis.edu"><img src="images/ucdavislogo_white.png" class="img-responsive"/> </a>				
 				</div>
 	
-				<div class="col-sm-4 col-lg-1half footer-logo">
+				<div class="col-sm-4 col-lg-2 footer-logo logo-sm">
 					<a href="http://www.northwestern.edu"><img src="images/nu_logo_white.png" class="img-responsive"/> </a>
 				</div>
 	
-				<div class="col-sm-4 col-lg-1 footer-logo">
+				<div class="col-sm-4 col-lg-2 footer-logo logo-sm">
 					<a href="https://www.umich.edu"><img src="images/UM_white.png" class="img-responsive"/> </a>
 				</div>
 	
-				<div class="col-sm-4 col-lg-2 footer-logo">
+				<div class="col-sm-4 col-lg-2 footer-logo logo-lg">
 					<a href="https://www.nd.edu"><img src="images/ndamelogo_white.png"  class="img-responsive"/> </a>
 				</div>	
 			</div>			

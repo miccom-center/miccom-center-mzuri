@@ -71,14 +71,26 @@ li p {
 }
 
 .navbar {
-    /* background-color: #303238; */
+    /* background-color: #303238;  */
     background-color: #404040;
     border-bottom:1px #404040;
     border-top:1px #404040;
 }
 
+/* attempting to center the navbar links */
+/* doesn't work for logo atm */
+/* .navbar .navbar-nav {
+	display:inline-block;
+	float:none;
+}
+.navbar .navbar-collapse {
+	text-align:center;
+} */
+
 .navbar .navbar-nav > li > a {
     color: #FFF;
+	padding-left:13px;
+	padding-right:13px;
 }
 
 .navbar .navbar-nav > li > a:hover 
@@ -116,11 +128,12 @@ li p {
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
     color: #FFF;
-	padding:0 0 0 15px; 
+	/* padding:5px 0 0 15px;  */
+	padding:5px 0 0 15px; 
 	/* padding:0; */
 	/* border-top:1px #303238 solid; */
 	/* border-bottom:1px #303238 solid; */
-	background-color:#404040
+	background-color:#404040;
 }
 .navbar-logo  {
 	/* height:2.778rem; */
@@ -132,7 +145,17 @@ li p {
 	height:auto;
 	margin:0;
 }
-@media(max-width:991px) {
+
+@media(min-width:992px) {
+	.navbar .navbar-nav > li > a {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.navbar .navbar-brand,
+	.navbar .navbar-brand:hover,
+	.navbar .navbar-brand:focus {
+		padding:5px 15px 0 15px; 
+	}
 }
 
 
@@ -171,11 +194,13 @@ td {
 tr > th:first-of-type,
 tr> td:first-of-type {
 	font-weight:bold; 
-	vertical-align:middle;
+}
+td.team-leader a {
+	color:black;
 }
 
-/* Carousel */
 
+/* Carousel */
 .carousel-control.left, .carousel-control.right {
    background-image:none !important;
 }
@@ -190,7 +215,6 @@ tr> td:first-of-type {
 .carousel img {
 	margin:0;
 }
-
 .carousel-caption {
 	position:relative;
 	left:auto;
@@ -293,8 +317,9 @@ tr> td:first-of-type {
   	background-color: #000000;
 } */
 
+
 /* HOLY WOW OH MY GOD THIS IS A TERRIBLE WAY OF DOING THIS */
-/* currently, we are setting the image sizes manually for all kinds of device sizes to avoid skewing the aspect ratio or having the rest of the page move in response */
+/* currently, we are setting the carousel image sizes manually for all kinds of device sizes to avoid skewing the aspect ratio or having the rest of the page move in response */
 /* TODO: make this responsive. ie, automatically resize images to be max size without overflowing or changing aspect ratio, but keep the total height of the carousel at any one device size equal to the height of the maximum option */
 @media (max-width: 390px) {
 	.carousel img {
@@ -369,40 +394,38 @@ tr> td:first-of-type {
 
 /* Footer shenanigans */
 .footer { 
-	/* background-color:#303238;  */
-	background-color:#333; 
-	/* color:#9d9d9d; */
+	background-color:#404040; 
 	color:#FFF; 
-	/* min-height:300px;  */
-	font-family: 'Open Sans', sans-serif; 
 	margin-top:40px;
 }
-
 .footer-blurb p { 
 	text-align:center; 
 	font-weight: 600;
 	margin:40px;
 }
+.footer-logo {
+	height:135px;
+}
 .footer-logo img {
 	margin:30px 0;
-	max-height:60px;
-	max-width:100%;
+	/* max-height:75px; */
+	/* max-width:100%; */
 	width:auto;
+	margin-left:auto;
+	margin-right:auto;
 }
-.col-lg-1half{
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+.footer-logo.logo-lg img {
+	max-height:40px;
 }
-@media (min-width: 1200px) {
-    .col-lg-1half {
-        float: left;
-    }
-    .col-lg-1half {
-        width: 12.5%;
-    }
+.footer-logo.logo-sm img {
+	max-height:75px;
 }
+@media(max-width:767px) {
+	.footer-logo {
+		height:auto;
+	}
+}
+
 
 /* for logos (FIX TO INCLUDE FOOTER?) */
 .logo {
@@ -495,11 +518,9 @@ tr> td:first-of-type {
 .index-panel .panel-heading{
 	background-color:#d8d8d8; 
 }
-
 .index-panel .panel-heading h4{
 	font-weight:bold;
 }
-
 .panel p {
 	margin-bottom:0;
 }
@@ -525,8 +546,28 @@ tr> td:first-of-type {
 	}
 }
 
+/* pictures on software page */
+.img-wrapper.software {
+	max-width:560px;
+	height:auto;
+}
 
+
+.col-lg-1half{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 /* Responsive Styles */
+@media (min-width: 1200px) {
+    .col-lg-1half {
+        float: left;
+    }
+    .col-lg-1half {
+        width: 12.5%;
+    }
+}
 
 /* change body width */
 /* @media (min-width: 1000px) {
