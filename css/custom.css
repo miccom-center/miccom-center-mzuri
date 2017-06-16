@@ -475,6 +475,7 @@ td.team-leader a {
     }
 }
 
+
 /* publication entries */
 .publication h3 {
 	margin-top:0;
@@ -485,16 +486,29 @@ td.team-leader a {
 	margin-bottom: 5px;
 }
 /* FIX: why is the whole width of the column clickable?*/
-/* FIX: margin-bottom nonzero only on small devices */
 .publication img {
 	max-height: 150px;
 	width:auto;
 	margin-bottom:0;	
 }
+@media(max-width:767px) {
+    .publication img {
+		max-height:200px;
+		height:auto;
+		margin-left:auto;
+		margin-right:auto;
+        margin-bottom: 25px;
+    }
+}
 .abstract p {
 	margin-top:7px;
 	font-size:1em;
 }
+/* .publication img.img-publi {
+	float:left;
+	clear:below;
+} */
+
 
 /* denser lists */
 .dense-list p {
@@ -551,6 +565,32 @@ td.team-leader a {
 	max-width:560px;
 	height:auto;
 }
+
+/* large pictures that need to take up only part of width on large devices, full width on small */
+@media(min-width:992px) {
+	img.img-lg {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		width:60%;
+		text-align:center;
+	}
+}
+img.img-right {
+	float:right;
+	margin: 0 0 0 30px;
+}
+img.img-60per {
+	width:60%;
+}
+@media(max-width:991px) {
+	img.img-right {
+		float:none;
+		width:100%;
+		margin:20px 0;
+	}
+}
+
 
 
 .col-lg-1half{
