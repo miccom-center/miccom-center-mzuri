@@ -43,11 +43,6 @@ p {
 	margin:0 0 20px 0;
 }
 
-.red-bold-text {
-	color: #f00;
-	font-weight:bold;
-}
-
 a {
 	word-wrap: break-word;
 }
@@ -62,9 +57,12 @@ li p {
 	font-size:0.95rem;
 }
 
+table {
+	margin: 25px 0;
+}
+
 
 /* navbar */
-
 .navbar li {
 	font-size:1rem;
 	margin-bottom:0;
@@ -159,8 +157,6 @@ li p {
 }
 
 
-
-
 /*Jumbotron header */
 .jumbotron {
 	background: #445E93;
@@ -178,7 +174,6 @@ li p {
 }
 
 
-
 /* table */
 th, td {
 	padding: 5px;
@@ -192,7 +187,7 @@ td {
 	vertical-align:text-top;
 }
 tr > th:first-of-type,
-tr> td:first-of-type {
+tr > td:first-of-type {
 	font-weight:bold; 
 }
 td.team-leader a {
@@ -223,7 +218,7 @@ td.team-leader a {
 	text-shadow:none;
 } 
 
-/* TODO: make height of the caption equal to max of possible options automatically (and responsively */
+/* TODO: make height of the caption equal to max of possible options AUTOMATICALLY and RESPONSIVELY */
 .new-caption-area {
 	height:85px;
 }
@@ -317,7 +312,6 @@ td.team-leader a {
   	background-color: #000000;
 } */
 
-
 /* HOLY WOW OH MY GOD THIS IS A TERRIBLE WAY OF DOING THIS */
 /* currently, we are setting the carousel image sizes manually for all kinds of device sizes to avoid skewing the aspect ratio or having the rest of the page move in response */
 /* TODO: make this responsive. ie, automatically resize images to be max size without overflowing or changing aspect ratio, but keep the total height of the carousel at any one device size equal to the height of the maximum option */
@@ -368,35 +362,38 @@ td.team-leader a {
 }
 
 
-
-
- /*!
- * for adding spacing between Bootstrap rows 
- * (apply to the row div that needs a top margin)
- */
-.top-buffer { margin-top:40px; }
-.top-buffer-sm { margin-top:10px; }
-.top-buffer-md { margin-top:50px; }
-.top-buffer-lg { margin-top:150px; }
-.bottom-buffer-lg { margin-bottom:125px; }
-.bottom-buffer-md { margin-bottom:50px; }
+ /* for adding vertical spacing (probably better to do this in other styles)*/
 .bottom-buffer-sm { margin-bottom:20px; }
+.bottom-buffer-md { margin-bottom:50px; }
+.bottom-buffer-lg { margin-bottom:125px; }
+.top-buffer-sm { margin-top:20px; }
+.top-buffer-md { margin-top:50px; }
+.top-buffer-lg { margin-top:125px; }
+
 
 /* Contact Us page styles */
+.address-header {
+	margin: 45px 0px;
+}
 .address-large {
 	font-size: 1.25em;
 	margin-bottom: 75px;
 }
-
-.address-header {
-	margin: 40px 0px;
+@media (max-width: 767px) {
+	.address-header {
+		margin: 30px 0px;
+	}
+	.address-large {
+		margin-bottom:45px;
+	}
 }
 
-/* Footer shenanigans */
+
+/* Footer */
 .footer { 
 	background-color:#404040; 
 	color:#FFF; 
-	margin-top:40px;
+	margin-top:50px;
 }
 .footer-blurb p { 
 	text-align:center; 
@@ -408,8 +405,6 @@ td.team-leader a {
 }
 .footer-logo img {
 	margin:30px 0;
-	/* max-height:75px; */
-	/* max-width:100%; */
 	width:auto;
 	margin-left:auto;
 	margin-right:auto;
@@ -426,16 +421,13 @@ td.team-leader a {
 	}
 }
 
-
-/* for logos (FIX TO INCLUDE FOOTER?) */
-.logo {
-	margin: 10px 0;
-}
-
 /* profiles 
 (picture of person pluse name and small description */
 .person-list-entry h3, .person-list-entry h4, .person-list-entry p{
 	margin: 0 20px 10px 0;
+}
+.person-list-entry p {
+	font-size:1rem;
 }
 .person-list-entry img{
 	height: 100px;
@@ -504,11 +496,6 @@ td.team-leader a {
 	margin-top:7px;
 	font-size:1em;
 }
-/* .publication img.img-publi {
-	float:left;
-	clear:below;
-} */
-
 
 /* denser lists */
 .dense-list p {
@@ -520,21 +507,29 @@ td.team-leader a {
 	margin-bottom: 5px;
 }
 
+
 /* group of panels */
 .panel {
 	margin-top:20px;
 	margin-bottom:30px;
 }
-
 .index-panel {
 	border-top:none;
 }
 .index-panel .panel-heading{
 	background-color:#d8d8d8; 
+	/* border: #d8d8d8 1px solid; */
 }
 .index-panel .panel-heading h4{
 	font-weight:bold;
 }
+.no-margin-top {
+	margin:0 0 30px 0;
+	/* border:1px solid black; */
+}
+.panel-dark {
+	border: 1px solid #BEBEBE; 
+	background-color:#F9F9F9;}
 .panel p {
 	margin-bottom:0;
 }
@@ -560,59 +555,39 @@ td.team-leader a {
 	}
 }
 
+
 /* pictures on software page */
 .img-wrapper.software {
 	max-width:560px;
 	height:auto;
 }
 
+
 /* large pictures that need to take up only part of width on large devices, full width on small */
+img.img-lg {
+	/* margin: 50px auto; */
+	margin: 20px auto;
+}
 @media(min-width:992px) {
 	img.img-lg {
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
 		width:60%;
-		text-align:center;
 	}
 }
 img.img-right {
 	float:right;
-	margin: 0 0 0 30px;
+	margin: 40px 0 45px 45px;
 }
 img.img-60per {
 	width:60%;
 }
-@media(max-width:991px) {
-	img.img-right {
-		float:none;
-		width:100%;
-		margin:20px 0;
-	}
+ing.img-80per {
+	width:80%;
 }
-
-
-
-.col-lg-1half{
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+.outline {
+	padding: 15px 15px 0 15px;
+	margin-bottom:20px;
+	border: #d8d8d8 1px solid;
+	border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
 }
-/* Responsive Styles */
-@media (min-width: 1200px) {
-    .col-lg-1half {
-        float: left;
-    }
-    .col-lg-1half {
-        width: 12.5%;
-    }
-}
-
-/* change body width */
-/* @media (min-width: 1000px) {
-    .container{
-        max-width: 800px;
-    }
-}
- */
