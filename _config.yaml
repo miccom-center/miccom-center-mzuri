@@ -1,1 +1,4 @@
+# Site settings
+
+# Build settings
 exclude: [node_modules]
