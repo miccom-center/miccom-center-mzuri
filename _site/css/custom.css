@@ -1,0 +1,593 @@
+/*
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ *
+ * Modified by Mzuri S Handlin
+ *
+ */
+
+/*Possible colors from coolors.co:  (need to get my shit in SASS)
+* green: #48A9A6
+* off-white: #E4DFDA
+* tan: #D4B483
+* red: #C1666B
+* blue: #445E93
+*/
+
+/* Global Styles */
+html {
+	font-size:18px; 
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+img {
+	margin-bottom:25px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+p {
+	font-size:1.1rem;
+	/* font-size:1.2em; */
+	margin:0 0 20px 0;
+}
+
+a {
+	word-wrap: break-word;
+}
+
+li {
+	font-size:1rem;
+	margin-bottom:20px;
+}
+
+li p {
+	margin-top:10px;
+	font-size:0.95rem;
+}
+
+table {
+	margin: 25px 0;
+}
+
+
+/* navbar */
+.navbar li {
+	font-size:1rem;
+	margin-bottom:0;
+}
+
+.navbar {
+    /* background-color: #303238;  */
+    background-color: #404040;
+    border-bottom:1px #404040;
+    border-top:1px #404040;
+}
+
+/* attempting to center the navbar links */
+/* doesn't work for logo atm */
+/* .navbar .navbar-nav {
+	display:inline-block;
+	float:none;
+}
+.navbar .navbar-collapse {
+	text-align:center;
+} */
+
+.navbar .navbar-nav > li > a {
+    color: #FFF;
+	padding-left:13px;
+	padding-right:13px;
+}
+
+.navbar .navbar-nav > li > a:hover 
+/* .navbar .navbar-nav > li > a:focus */
+{
+    background-color: black;  
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: black;
+}
+
+.navbar .navbar-text {
+    color: #FFF;
+}
+
+.navbar .navbar-toggle {
+	background-color:black;
+    border-color: black; 
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+    background-color: black;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #FFF;
+	/* padding:5px 0 0 15px;  */
+	padding:5px 0 0 15px; 
+	/* padding:0; */
+	/* border-top:1px #303238 solid; */
+	/* border-bottom:1px #303238 solid; */
+	background-color:#404040;
+}
+.navbar-logo  {
+	/* height:2.778rem; */
+	/* width:auto;	 */
+	/* width:5.5909rem; */
+	width:5.556rem; 
+	/* width:4.757rem; */
+	/* width:100px; */
+	height:auto;
+	margin:0;
+}
+
+@media(min-width:992px) {
+	.navbar .navbar-nav > li > a {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.navbar .navbar-brand,
+	.navbar .navbar-brand:hover,
+	.navbar .navbar-brand:focus {
+		padding:5px 15px 0 15px; 
+	}
+}
+
+
+/*Jumbotron header */
+.jumbotron {
+	background: #445E93;
+	/* background: #585191; */
+	/* background: #7D6F86; */
+	/* color: #EEF4ED; */
+	color: white;
+	text-align: center;
+	margin-bottom:40px;
+	padding:37px 0;
+}
+.jumbotron h1 {
+	font-size:2.2rem;
+	margin:0;
+}
+
+
+/* table */
+th, td {
+	padding: 5px;
+	font-size: 1.25em;
+}
+th {
+	width:20%;
+	font-weight:normal; 
+}
+td {
+	vertical-align:text-top;
+}
+tr > th:first-of-type,
+tr > td:first-of-type {
+	font-weight:bold; 
+}
+td.team-leader a {
+	color:black;
+}
+
+
+/* Carousel */
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+}
+/* .carousel-controls {
+	position:relative;
+	width:300px;
+	margin: 0 auto;
+} */
+/* .carousel-indicators{
+	top:0px;
+} */
+.carousel img {
+	margin:0;
+}
+.carousel-caption {
+	position:relative;
+	left:auto;
+	right:auto;
+	color: #333;
+	text-shadow:none;
+} 
+
+/* TODO: make height of the caption equal to max of possible options AUTOMATICALLY and RESPONSIVELY */
+.new-caption-area {
+	height:85px;
+}
+.new-caption-area h3{
+	margin:10px 0 3px 0;
+	font-size:1.2rem;
+	text-align:center;
+}
+.new-caption-area p{
+	text-align:center;
+	font-size:0.9rem;
+}
+
+/* .carousel-controls {
+   	position: relative;
+   	bottom: 0;
+   	left: 0;
+   	top: 10px;
+   	display: block;
+   	width: 177px;
+   	margin: 0 auto;
+   	z-index: 1;
+   	height: 24px;
+   	text-align: center;
+   	position: relative;
+   	display: block;
+}
+
+.carousel-control {
+  	position: absolute;
+  	top: 25.5px;
+  	bottom: 0;
+  	left: 0;
+  	background: #000000;
+  	font-size: 5px;
+  	background: none !important;
+  	color: #000 !important;
+  	text-align: center;
+}
+
+.carousel-control i {
+    	font-size: 20px;
+}
+
+
+.carousel-control:hover {
+  	color: #000;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  	position: absolute;
+  	display: inline-block;
+}
+
+.carousel-indicators {
+  	position: relative;
+  	bottom: 0;
+  	left: 50%;
+  	z-index: 15;
+  	width: 100%;
+  	top: 10px;
+  	padding-left: 0;
+  	margin-left: -30%;
+  	text-align: center;
+  	list-style: none;
+}
+
+
+.carousel-indicators li {
+  	display: inline-block;
+   	zoom: 1;
+   	width: 10px;
+   	height: 10px;
+   	margin: 0 2px;
+   	background: transparent;
+   	-webkit-border-radius: 50%;
+   	-moz-border-radius: 50%;
+   	border-radius: 50%;
+   	border: 3px solid transparent;
+   	-webkit-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	-moz-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	cursor: pointer;
+}
+
+.carousel-indicators .active {
+  	width: 10px;
+  	height: 10px;
+  	margin: 0;
+  	background-color: #000000;
+} */
+
+/* HOLY WOW OH MY GOD THIS IS A TERRIBLE WAY OF DOING THIS */
+/* currently, we are setting the carousel image sizes manually for all kinds of device sizes to avoid skewing the aspect ratio or having the rest of the page move in response */
+/* TODO: make this responsive. ie, automatically resize images to be max size without overflowing or changing aspect ratio, but keep the total height of the carousel at any one device size equal to the height of the maximum option */
+@media (max-width: 390px) {
+	.carousel img {
+		height:150px;
+		width:auto;
+	}
+	.new-caption-area {
+		height:150px;
+	}
+}
+@media (min-width: 391px) {
+	.carousel img {
+		height:200px;
+		width:auto;
+	}
+	.new-caption-area {
+		height:120px;
+	}
+}
+@media (min-width: 481px) {
+	.carousel img {
+		height:250px;
+		width:auto;
+	}
+	.new-caption-area {
+		height:90px;
+	}	
+}
+@media (min-width: 768px) {
+	.carousel img {
+		height:300px;
+		width:auto;
+	}
+}
+@media (min-width: 992px) {
+	.carousel img {
+		height:250px;
+		width:auto;
+	}
+}
+@media (min-width: 1200px) {
+	.carousel img {
+		height:300px;
+		width:auto;
+	}
+}
+
+
+ /* for adding vertical spacing (probably better to do this in other styles)*/
+.bottom-buffer-sm { margin-bottom:20px; }
+.bottom-buffer-md { margin-bottom:50px; }
+.bottom-buffer-lg { margin-bottom:125px; }
+.top-buffer-sm { margin-top:20px; }
+.top-buffer-md { margin-top:50px; }
+.top-buffer-lg { margin-top:125px; }
+
+
+/* Contact Us page styles */
+.address-header {
+	margin: 45px 0px;
+}
+.address-large {
+	font-size: 1.25em;
+	margin-bottom: 75px;
+}
+@media (max-width: 767px) {
+	.address-header {
+		margin: 30px 0px;
+	}
+	.address-large {
+		margin-bottom:45px;
+	}
+}
+
+
+/* Footer */
+.footer { 
+	background-color:#404040; 
+	color:#FFF; 
+	margin-top:50px;
+}
+.footer-blurb p { 
+	text-align:center; 
+	font-weight: 600;
+	margin:40px;
+}
+.footer-logo {
+	height:135px;
+}
+.footer-logo img {
+	margin:30px 0;
+	width:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+.footer-logo.logo-lg img {
+	max-height:40px;
+}
+.footer-logo.logo-sm img {
+	max-height:75px;
+}
+@media(max-width:767px) {
+	.footer-logo {
+		height:auto;
+	}
+}
+
+/* profiles 
+(picture of person pluse name and small description */
+.person-list-entry h3, .person-list-entry h4, .person-list-entry p{
+	margin: 0 20px 10px 0;
+}
+.person-list-entry p {
+	font-size:1rem;
+}
+.person-list-entry img{
+	height: 100px;
+	width:auto;
+	float: left;
+	margin: 0 20px 0 0;
+	clear:below;
+}
+@media(min-width:767px) {
+    .person-list-entry img {
+        width:auto;
+		height:125px;
+    }
+}
+
+/*  news post entries */
+.news-post img{
+	/* height: 100px; */
+	/* width:auto; */
+	max-height: 200px;
+	width:auto;
+}
+.news-post p {
+	margin:10px 0 0 0;
+}
+.news-post h3 {
+	margin-top: 0;
+}
+@media(max-width:767px) {
+    .news-post img {
+        margin-bottom: 15px;
+    }
+}
+@media(min-width:768px) {
+    .news-post img {
+        margin-bottom: 0;
+    }
+}
+
+
+/* publication entries */
+.publication h3 {
+	margin-top:0;
+	font-size:1.6em;
+}
+.publication p {
+	/* font-size:1.15em; */
+	margin-bottom: 5px;
+}
+/* FIX: why is the whole width of the column clickable?*/
+.publication img {
+	max-height: 150px;
+	width:auto;
+	margin-bottom:0;	
+}
+@media(max-width:767px) {
+    .publication img {
+		max-height:200px;
+		height:auto;
+		margin-left:auto;
+		margin-right:auto;
+        margin-bottom: 25px;
+    }
+}
+.abstract p {
+	margin-top:7px;
+	font-size:1em;
+}
+
+/* denser lists */
+.dense-list p {
+	margin-bottom:5px;
+	font-weight:500;
+}
+.dense-list li {
+	font-size:0.95rem;
+	margin-bottom: 5px;
+}
+
+
+/* group of panels */
+.panel {
+	margin-top:20px;
+	margin-bottom:30px;
+}
+.index-panel {
+	border-top:none;
+}
+.index-panel .panel-heading{
+	background-color:#d8d8d8; 
+	/* border: #d8d8d8 1px solid; */
+}
+.index-panel .panel-heading h4{
+	font-weight:bold;
+}
+.no-margin-top {
+	margin:0 0 30px 0;
+	/* border:1px solid black; */
+}
+.panel-dark {
+	border: 1px solid #BEBEBE; 
+	background-color:#F9F9F9;}
+.panel p {
+	margin-bottom:0;
+}
+.panel-footer {
+	padding-top: 0;
+	border-top:0;
+	background-color:white;
+}
+/* BAD HACKY SOLUTION, NEED TO MAKE ALL PANELS IN GROUP HAVE SAME HEIGHT automtically */
+@media(min-width:992px) {
+	.research_overview-panels .panel-body{
+		height:225px;
+	}
+}
+@media(min-width:1200px) {
+	.research_overview-panels .panel-body{
+		height:170px;
+	}
+}
+@media(min-width:992px) {
+	.index-panel .panel-body{
+		height:80px;
+	}
+}
+
+
+/* pictures on software page */
+.img-wrapper.software {
+	max-width:560px;
+	height:auto;
+}
+
+
+/* large pictures that need to take up only part of width on large devices, full width on small */
+img.img-lg {
+	/* margin: 50px auto; */
+	margin: 20px auto;
+}
+@media(min-width:992px) {
+	img.img-lg {
+		width:60%;
+	}
+}
+img.img-right {
+	float:right;
+	margin: 40px 0 45px 45px;
+}
+img.img-60per {
+	width:60%;
+}
+ing.img-80per {
+	width:80%;
+}
+.outline {
+	padding: 15px 15px 0 15px;
+	margin-bottom:20px;
+	border: #d8d8d8 1px solid;
+	border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
